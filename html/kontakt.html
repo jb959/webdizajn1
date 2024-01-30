@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<head>
+      
+    <meta charset="UTF-8">
+    <link rel = "stylesheet" href="../css/styles.css">
+<!-- takto relativnu cestu -->
+<script src="../js/copyme.js"></script>
+<title>kontakt</title>
+<link rel="icon" type="image/x-icon" href="../img/logoRK.png">
+
+    <style>
+
+        </style>
+
+</head>
+<html>
+<body>
+<!--
+
+-->
+<div class="sticky"> <!--menu, toto bude chodit za nami ale nech to je navrchu -->
+
+
+       <span class = "RKNadpis">Ružomberok</span> 
+    
+
+        <ul class = RKmenuList>
+
+            <li><a href="historia.html">História</a></li>
+            <li><a href="prostredie.html">prostredie</a></li>
+            <li><a href="kultura.html">kultúra</a></li>
+            <li><a href="skoly.html">Školstvo</a></li>
+            <li><a href="mapy.html">Poloha mesta</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+
+
+</div>
+
+
+  <div class="main">
+    <div class="nadpis">
+<h1>kontakt</h1>
+</div>
+
+<div class = "tema">
+
+</div>
+<form action="/action_page.php">
+    <label for="meno">meno</label><br>
+    <input type="text" id="meno" name="meno" value=""><br>
+    <label for="prizvisko">Last name:</label><br>
+    <input type="prizvisko" id="prizvisko" name="prizvisko" value="prizvisko"><br><br>
+
+    <label for="daleko">vzdialenost od ruzomberka v km</label>
+    <select id="daleko" name="daleko">
+      <option value="rk">0</option>
+      <option value="blizko"> &lt 50 </option>
+      <option value="dalej">&lt  200</option>
+      <option value="velmi_daleko">&gt 500</option>
+    </select>
+    <br> <br>
+
+    <textarea name="sprava" rows="10" cols="30">napiste spravu pre nasu stranku</textarea>
+
+<br>
+
+<input type="radio" id="ano" name="povod" value="1">
+<label for="ano">som z ruzomberka</label><br>
+<input type="radio" id="nie" name="povod" value="0">
+<label for="nie">nie som z ruzomberka</label><br>
+
+<br>
+<input type="checkbox" id="vlastnim" name="vlastnim" value="vlastnim">
+  <label for="vlastnim"> vlastnim nehnutelnost v ruzomberku </label><br>
+
+<br>
+
+<label for="phone">telefonne cislo</label><br><br>
+  <input type="tel" id="phone" name="phone" placeholder="0919 234 567 " pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required><br><br>
+
+  <label for="email">email (povinný)</label>
+  <input type="email" id="email" name="email" required>
+
+<br>
+    <input type="submit" value="ododslat">
+  </form>
+
+<br>
+<a href="index.html" target="_blank"> index</a>
+    
+
+</div>
+
+
+<footer class="footer">
+    <p><a href="kontakt.html">kontakt</a> </p>
+    <br>
+    <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+      <br>
+    <p>Katolícka univerzita v Ružomberku</p>
+    <br>
+    <p>Hrabovská cesta 5512/1A</p>
+    <p>034 01 Ružomberok</p>
+    <br>        
+    <p id = "cislo" > <a  href="#bottom" onclick="skopiruj()"> +421 949 123 456 </a></p>
+    
+  
+  </footer>
+  
+
+</body>
+</html>
